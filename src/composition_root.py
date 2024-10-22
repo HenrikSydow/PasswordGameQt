@@ -2,11 +2,13 @@ import sys
 from PySide6.QtWidgets import QApplication
 
 from src.pwd_rules.rules.rule_at_most_n_digits_in_a_row import RuleAtMostNDigitsInARow
+from src.pwd_rules.rules.rule_contains_calc_result import RuleContainsCalcResult
 from src.pwd_rules.rules.rule_contains_lambda import RuleContainsLambda
 from src.pwd_rules.rules.rule_contains_lowercase_letter import RuleContainsLowercaseLetter
 from src.pwd_rules.rules.rule_contains_number import RuleContainsNumber
 from src.pwd_rules.rules.rule_contains_special_character import RuleContainsSpecialCharacter
 from src.pwd_rules.rules.rule_contains_uppercase_letter import RuleContainsUppercaseLetter
+from src.pwd_rules.rules.rule_maximum_length import RuleMaximumLength
 from src.pwd_rules.rules.rule_numbers_add_up_to import RuleNumbersAddUpTo
 from src.pwd_rules.rules.rule_upper_lower_alternating import RuleUpperLowerAlternating
 from src.pwd_validator_view.password_game_controller import PasswordGameController
@@ -30,7 +32,9 @@ if __name__ == '__main__':
             RuleNumbersAddUpTo(),
             RuleAtMostNDigitsInARow(),
             RuleContainsLambda(),
-            RuleUpperLowerAlternating()
+            RuleUpperLowerAlternating(),
+            RuleContainsCalcResult(),
+            RuleMaximumLength()
         ]
     )
 
