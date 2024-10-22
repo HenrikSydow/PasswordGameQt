@@ -6,4 +6,4 @@ class PwdRuleBase(ABC):
 
     @abstractmethod
     def check(self, password: str) -> bool:
-        pass
+        raise NotImplementedError()
