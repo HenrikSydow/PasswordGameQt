@@ -10,6 +10,7 @@ from src.pwd_rules.rules.rule_contains_number import RuleContainsNumber
 from src.pwd_rules.rules.rule_contains_special_character import RuleContainsSpecialCharacter
 from src.pwd_rules.rules.rule_contains_uppercase_letter import RuleContainsUppercaseLetter
 from src.pwd_rules.rules.rule_contains_weird_char_sequence import RuleContainsWeirdCharSequence
+from src.pwd_rules.rules.rule_first_char_matches_last import RuleFirstCharMatchesLast
 from src.pwd_rules.rules.rule_maximum_length import RuleMaximumLength
 from src.pwd_rules.rules.rule_numbers_add_up_to import RuleNumbersAddUpTo
 from src.pwd_rules.rules.rule_upper_lower_alternating import RuleUpperLowerAlternating
@@ -38,7 +39,8 @@ if __name__ == '__main__':
             RuleContainsCalcResult(),
             RuleMaximumLength(),
             RuleContainsChineseChar(),
-            RuleContainsWeirdCharSequence()
+            RuleContainsWeirdCharSequence(),
+            RuleFirstCharMatchesLast()
         ]
     )
 
