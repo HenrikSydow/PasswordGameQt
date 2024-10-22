@@ -6,6 +6,7 @@ from src.pwd_rules.rules.rule_contains_calc_result import RuleContainsCalcResult
 from src.pwd_rules.rules.rule_contains_chinese_char import RuleContainsChineseChar
 from src.pwd_rules.rules.rule_contains_lambda import RuleContainsLambda
 from src.pwd_rules.rules.rule_contains_lowercase_letter import RuleContainsLowercaseLetter
+from src.pwd_rules.rules.rule_contains_mail import RuleContainsMail
 from src.pwd_rules.rules.rule_contains_number import RuleContainsNumber
 from src.pwd_rules.rules.rule_contains_special_character import RuleContainsSpecialCharacter
 from src.pwd_rules.rules.rule_contains_uppercase_letter import RuleContainsUppercaseLetter
@@ -42,7 +43,8 @@ if __name__ == '__main__':
             RuleContainsChineseChar(),
             RuleContainsWeirdCharSequence(),
             RuleFirstCharMatchesLast(),
-            RuleEvenNumber()
+            RuleEvenNumber(),
+            RuleContainsMail()
         ]
     )
 
