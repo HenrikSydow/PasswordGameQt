@@ -42,7 +42,7 @@ if __name__ == '__main__':
             RuleContainsChineseChar(),
             RuleContainsWeirdCharSequence(),
             RuleFirstCharMatchesLast(),
-            RuleEvenNumber(g)
+            RuleEvenNumber()
         ]
     )
 
